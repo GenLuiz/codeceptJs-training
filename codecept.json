@@ -1,0 +1,31 @@
+{
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "https://www.github.com",
+      "browser": "chrome"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "githubPage": "./pages/github.js"
+  },
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {
+    "features": "./features/*.feature",
+    "steps": [
+      "./step_definitions/steps.js"
+    ]
+  },
+  "plugins": {
+    "screenshotOnFail": {
+      "enabled": true
+    }
+  },
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "name": "codeceptJs-training"
+}
