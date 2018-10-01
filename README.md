@@ -9,14 +9,8 @@
  # WHEN you run the codeceptjs
   codeceptjs run --steps
  # THEN you should see your test running
- Github login --
-  invalid password
-    I am on page "https://github.com"
-    I click "Sign in"
-    I see "Sign in to GitHub"
-    githubPage: fillLogin
-    I click "//*[@name='commit']"
-    I see "Incorrect username or password."
+  Github login -- \n
+  invalid password \n
   √ OK in 12776ms
 
 
