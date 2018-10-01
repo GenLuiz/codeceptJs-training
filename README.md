@@ -9,5 +9,5 @@
  # WHEN you run the codeceptjs
   codeceptjs run --steps
  # THEN you should see your test running
- succes!
+ success!
 
