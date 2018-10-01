@@ -9,8 +9,5 @@
  # WHEN you run the codeceptjs
   codeceptjs run --steps
  # THEN you should see your test running
-  Github login --
-  invalid password
-  √ OK in 12776ms
-
+ succes!
 
