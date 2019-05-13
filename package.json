@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "codeceptjs": "^1.4.3"
+    "@wdio/selenium-standalone-service": "^5.8.0",
+    "codeceptjs": "^1.4.3",
+    "wdio": "^3.0.3"
   }
 }

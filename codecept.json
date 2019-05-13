@@ -3,7 +3,8 @@
   "helpers": {
     "WebDriverIO": {
       "url": "https://www.github.com",
-      "browser": "chrome"
+      "browser": "chrome",
+      "windowSize": "maximize"
     }
   },
   "include": {
@@ -23,10 +24,6 @@
   "plugins": {
     "screenshotOnFail": {
       "enabled": true
-    },
-    "wdio": {
-      "enabled": true,
-      "services": "selenium-standalone"
     }
   },
   "tests": "./*_test.js",
