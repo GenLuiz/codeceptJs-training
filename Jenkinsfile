@@ -4,9 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                sh 'npm install codeceptjs'
                 sh 'npm install selenium-standalone'
-                sh 'npm install @wdio/selenium-standalone-service --save'
+                sh 'npm install @wdio/cli'
+                sh 'npm install @wdio/selenium-standalone-service'
             }
         }
         stage('run tests') {
