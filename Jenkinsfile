@@ -1,20 +1,17 @@
 pipeline {
     agent any
-
+    tools {nodejs "NodeJs"}
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'npm install'
+                sh 'npm install selenium-standalone'
+                sh 'npm install @wdio/selenium-standalone-service --save'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+        stage('run tests') {
+            steps{
+                sh 'codeceptjs run --steps'
             }
         }
     }

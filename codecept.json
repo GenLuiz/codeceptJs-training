@@ -23,6 +23,10 @@
   "plugins": {
     "screenshotOnFail": {
       "enabled": true
+    },
+    "wdio": {
+      "enabled": true,
+      "services": "selenium-standalone"
     }
   },
   "tests": "./*_test.js",
