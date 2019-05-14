@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm uninstall -g nativescript'
-                sh 'npm cache clean'
+                sh 'npm cache clean verify'
                 sh 'npm install -g nativescript@latest'
                 sh 'npm install codeceptjs'
                 sh 'npm install selenium-standalone'
