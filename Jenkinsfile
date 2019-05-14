@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install -g node-gyp'
+                sh 'npm uninstall -g nativescript'
+                sh 'npm cache clean'
+                sh 'npm install -g nativescript@latest'
                 sh 'npm install codeceptjs'
                 sh 'npm install selenium-standalone'
                 sh 'npm install @wdio/cli'
