@@ -7,6 +7,8 @@ pipeline {
                 sh 'npm uninstall -g nativescript'
                 sh 'npm cache verify'
                 sh 'npm install -g nativescript@latest'
+                sh 'npm install -g node-gyp'
+                sh 'npm install -g fibers'
                 sh 'npm install codeceptjs'
                 sh 'npm install selenium-standalone'
                 sh 'npm install @wdio/cli'
